@@ -1,0 +1,63 @@
+/* Reset suave */
+* { box-sizing: border-box; }
+
+:root {
+  --color-fondo: #fff7fb;
+  --color-texto: #2c2c2c;
+  --color-principal: #ff69b4;
+  --color-principal-hover: #ff1493;
+  --sombra: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+}
+
+/* Centrado elegante */
+.contenedor {
+  min-height: 100vh;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 24px;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.titulo {
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn {
+  background: var(--color-principal);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  padding: 12px 18px;
+  font-size: 16px;
+  box-shadow: var(--sombra);
+  cursor: pointer;
+  transition: transform 0.1s ease, background 0.2s ease;
+}
+
+.btn:active { transform: scale(0.98); }
+.btn:hover { background: var(--color-principal-hover); }
+
+.resultado {
+  min-height: 48px;
+  font-size: 18px;
+}
