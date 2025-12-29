@@ -2,7 +2,7 @@
 * { box-sizing: border-box; }
 
 :root {
-  --color-fondo: #fff7fb;
+  --color-fondo: #F8A3DC; /* color favorito de Brissia */
   --color-texto: #2c2c2c;
   --color-principal: #ff69b4;
   --color-principal-hover: #ff1493;
@@ -12,7 +12,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  background: var(--color-fondo);
+  background: var(--color-fondo); /* fondo rosa pastel */
   color: var(--color-texto);
   font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
 }
@@ -33,6 +33,7 @@ html, body {
   font-size: 28px;
   line-height: 1.2;
   margin: 0;
+  color: #fff; /* título en blanco para contraste */
 }
 
 .botones {
@@ -60,4 +61,12 @@ html, body {
 .resultado {
   min-height: 48px;
   font-size: 18px;
+}
+
+/* Estilo para imágenes en las respuestas */
+.respuesta-img {
+  max-width: 250px;
+  border-radius: 12px;
+  box-shadow: var(--sombra);
+  margin-top: 16px;
 }
